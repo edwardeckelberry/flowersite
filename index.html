@@ -2,12 +2,104 @@
 <html>
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>Flower Web Design</title>
+    <title>ZenZephyr</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 </head>
 <body>
     <section class="header">
+        <nav>
+            <a href="index.html"><img src="https://p7.hiclipart.com/preview/315/623/652/smiley-icon-clip-art-smiley-png.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Delivery</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">My Bag</a></li>
+                    <li><a href="">Log in</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>Quality Products</h1>
+    <p>We are here to help you get<br>the best product worth your while.</p>
+    <a href="" class="hero-btn">Click "Shop" to start your search</a>
+</div>
+    
+</section>
 
-    </section>
+<!----- Course ----->
+
+<section class="course">
+    <h1>Products We Offer</h1>
+    <p>Including, but not limited to,<br>THC strains of all kinds, edibles, CBD, Delta-8, and much more</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Pens and Pods</h3>
+            <p>Sample Text</p>
+        </div>
+        <div class="course-col">
+            <h3>Edibles</h3>
+            <p>Sample Text</p>
+        </div>
+        <div class="course-col">
+            <h3>Pre-Rolls</h3>
+            <p>Sample Text</p>
+        </div>
+    </div>
+
+
+</section>
+
+<!----- campus ----->
+
+<section class="campus">
+    <h1>Our National Store</h1>
+    <p>On this site, you get everything you need from here.</p>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="https://images.pexels.com/photos/17914870/pexels-photo-17914870/free-photo-of-corner-of-vintage-building.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            <div class="layer">
+                <h3>Fulfillment</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="https://images.pexels.com/photos/17914870/pexels-photo-17914870/free-photo-of-corner-of-vintage-building.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            <div class="layer">
+                <h3>Satisfaction</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="https://images.pexels.com/photos/17914870/pexels-photo-17914870/free-photo-of-corner-of-vintage-building.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            <div class="layer">
+                <h3>Indulgence</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+<!-----JavaScript for Toggle Menu----->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
 </body>
 </html>
